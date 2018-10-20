@@ -1,0 +1,11 @@
+Pushing:
+git add -A
+git commit -m "insert changes here or comments"
+git push
+
+
+Pulling:
+git pull
+
+Check status:
+git status
