@@ -1,5 +1,11 @@
 body{
 	background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/rainbow-six-siege-background-4.jpg);
+	
+  animation-name: blinker;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
 }
 .operator{
 	width: 125px; 
@@ -18,3 +24,26 @@ body{
 }
 
 
+#MainTitle{
+	font-family: TitleFont; 
+	 color: #ffffff;
+	 font-size: 70px;
+	
+}
+
+#panorama{
+	 padding: 0px; margin: 0px;
+}
+
+
+@font-face {
+  font-family: TitleFont;
+  src: url(font/ghostclan.ttf);
+ 
+
+}
+
+@keyframes blinker{
+  from {background: url(https://images4.alphacoders.com/676/thumb-1920-676369.jpg);}
+  to {background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/rainbow-six-siege-background-4.jpg);}
+}
