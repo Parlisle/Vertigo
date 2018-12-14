@@ -3,6 +3,7 @@
 <head>
 	<title>Rainbow Six Siege</title>
 	<link rel="stylesheet" type="text/css" href="sixsiege.css">
+
 </head>
 <body>
 	<h1 id="MainTitle">Rainbow Six Siege Operators</h1>
@@ -11,7 +12,65 @@
 		<li>Home</li>
 		<li>Operators</li>		
 	</ul>
-	
+
+	<div class="row">
+		<div class="column">
+			<button onclick="play(1)" class="operatorbutton"><img class="operator" src="operatoricons/bandit.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/blitz.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/iq.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/jager.png"></button>
+		</div>
+
+		<div class="column">
+			<button class="operatorbutton"><img class="operator" src="operatoricons/fuze.png"></button>
+			<button onclick="play(2)" class="operatorbutton"><img class="operator" src="operatoricons/tachanka.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/glaz.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/kapkan.png"></button>
+		</div>
+
+		<div class="column">
+			<button class="operatorbutton"><img class="operator" src="operatoricons/montagne.png"></button>
+			<button onclick="play(3)" class="operatorbutton"><img class="operator" src="operatoricons/twitch.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/rook.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/doc.png"></button>
+		</div>
+
+		<div class="column">
+			<button class="operatorbutton"><img class="operator" src="operatoricons/ash.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/castle.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/pulse.png"></button>
+			<button class="operatorbutton"><img class="operator" src="operatoricons/thermite.png"></button>
+		</div>
+
+
+		
+	</div>
+
+  Audio sources to be used for audio scripting
+	<audio loop autoplay volume="0.1" muted>
+		<source src="audio/rainbowtheme.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="banditaudio">
+		<source src="audio/banditaudio.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="tachankaaudio">
+		<source src="audio/tachankaaudio.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="twitchaudio">
+		<source src="audio/twitchaudio.mp3" type="audio/mpeg">
+	</audio>
+
+	<script>
+		/*Play Audio When Specified Button Is Clicked*/
+  function play(int){
+  	if (int == 1) {var bandit = document.getElementById("banditaudio"); bandit.play();}
+       else if (int == 2) {var tachanka = document.getElementById("tachankaaudio"); tachanka.play();}
+       else	if (int == 3) {var twitch = document.getElementById("twitchaudio"); twitch.play();}
+  
+       
+                 }
+                 
+   </script>
 
 
 

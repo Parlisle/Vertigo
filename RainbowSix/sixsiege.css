@@ -1,3 +1,20 @@
 body{
 	background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/rainbow-six-siege-background-4.jpg);
 }
+.operator{
+	width: 125px; 
+
+}
+.operatorbutton{
+	background:transparent!important;
+	border-width: 0;
+
+}
+.row{
+	  position: fixed;
+  top: 50%;
+  left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+
