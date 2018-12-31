@@ -1,4 +1,4 @@
-body{
+#MainPageBody{
 	background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/rainbow-six-siege-background-4.jpg);
 	
   animation-name: blinker;
@@ -6,7 +6,18 @@ body{
   animation-iteration-count: infinite;
   animation-direction: alternate;
 
+
 }
+
+#OperatorPageBody{
+	background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/rainbow-six-siege-background-4.jpg);
+	margin-left: 5%;
+}
+:not(.navbar-inverse){
+	margin-left: 0%;
+}
+
+
 .operator{
 	width: 125px; 
 
@@ -17,10 +28,8 @@ body{
 
 }
 .row{
-	  position: fixed;
-  top: 50%;
-  left: 50%;
- transform: translate(-50%, -50%);
+	  position: absolute;
+
 }
 
 
@@ -35,6 +44,14 @@ body{
 	 padding: 0px; margin: 0px;
 }
 
+#logo{
+	width: 150px;
+}
+
+.operatorbutton:hover span {
+  padding-right: 25px;
+}
+
 
 @font-face {
   font-family: TitleFont;
@@ -47,3 +64,4 @@ body{
   from {background: url(https://images4.alphacoders.com/676/thumb-1920-676369.jpg);}
   to {background: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/rainbow-six-siege-background-4.jpg);}
 }
+
