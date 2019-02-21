@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destiny 2 Home Page</title>
+	<link rel="stylesheet" type="text/css" href="destiny.css">
+
+</head>
+<body>
+
+
+	<div class="preload">
+		<div class="logo">Destiny 2 </div>
+		<div class="loader-frame">
+			<div class="loader1" id="loader1"></div>
+			<div class="loader2" id="loader2"></div>
+
+		</div>
+
+
+	</div>
+
+
+<div class="topnav">
+  <a href="home.html"> <img id="icon" src="https://steamuserimages-a.akamaihd.net/ugc/959730069980977579/7C124772BBA66E2AB138820AD7498FF11967E9E0/"></a>
+  <a class="active" href="#home">Home</a>
+  <a href="#news">Class</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+
+<script>
+	var preload = document.getElementById("preload");
+	var loading = 0;
+	var id = setInterval(frame, 64);
+	function frame(){
+		if(loading == 100){
+			clearInterval(id);
+			window.open(loader.html, "_self");
+		}
+		else{
+			loading = loading + 1;
+			if (loading == 90) {preload.style.animation = "fadeout 1s ease";}
+		}
+	}
+</script>
+
+</body>
+</html>
